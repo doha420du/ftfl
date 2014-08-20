@@ -27,6 +27,10 @@ class PracticeTest extends TestCase {
         $this->assertContains('Dayle', $names);
     }
 
-
+    public function testAssertSame()
+    {
+        $val = null;
+        $this->assertSame(null, $val);
+    }
 
 }
