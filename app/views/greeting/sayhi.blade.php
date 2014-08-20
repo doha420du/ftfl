@@ -6,4 +6,5 @@
 echo $aNameOfTheVariable;
 
 ?>
+
 @stop
