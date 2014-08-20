@@ -15,6 +15,12 @@ class PracticeTest extends TestCase {
         $this->assertTrue($greeting === 'Hello, World.', $greeting);
     }
 
+    public function testAssertEquals()
+    {
+        $val = 0;
+        $this->assertEquals(0, $val);
+    }
 
+    
 
 }
