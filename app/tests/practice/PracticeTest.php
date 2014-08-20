@@ -6,6 +6,21 @@
  * Time: 9:14 AM
  */
 
+class DateFormatter {
+     protected $stamp;
+
+     public function __construct(DateTime $stamp)
+     {
+        $this->stamp = $stamp;
+     }
+
+     public function getStamp()
+     {
+         return $this->stamp;
+     }
+ }
+
+
 class PracticeTest extends TestCase {
 
     public function testAssertTrue()
@@ -61,4 +76,11 @@ class PracticeTest extends TestCase {
         $age = 25;
         $this->assertInternalType('integer', $age); // true
     }
+
+    public function testAssertInstanceOf()
+     {
+         $date = new DateFormatter(new DateTime);
+
+         $this->assertInstanceOf('DateTime', $date->getStamp()); // true
+     }
 }
