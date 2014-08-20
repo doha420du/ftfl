@@ -33,4 +33,15 @@ class PracticeTest extends TestCase {
         $this->assertSame(null, $val);
     }
 
+    public function testAssertArrayHasKey ()
+    {
+        $family = [
+                    'parents' => 'Joe',
+                    'children' => ['Timmy', 'Suzy']
+        ];
+
+        $this->assertArrayHasKey('parents', $family); // true
+    }
+
+
 }
