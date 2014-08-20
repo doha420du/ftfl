@@ -28,6 +28,12 @@ class PracticeTest extends TestCase {
         $this->assertEquals(0, $val);
     }
 
+    public function testAssertNotEquals()
+    {
+        $val = 0;
+        $this->assertNotEquals(1, $val);
+    }
+
     public function testAssertContains()
     {
         $names = ['Taylor', 'Shawn', 'Dayle'];
