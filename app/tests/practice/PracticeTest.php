@@ -43,5 +43,9 @@ class PracticeTest extends TestCase {
         $this->assertArrayHasKey('parents', $family); // true
     }
 
-
+    public function testAssertInternalType()
+    {
+        $age = 25;
+        $this->assertInternalType('integer', $age); // true
+    }
 }
