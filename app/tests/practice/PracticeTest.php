@@ -6,11 +6,15 @@
  * Time: 9:14 AM
  */
 
-class AssertTrueTest extends TestCase {
-     public function testHelloWorld()
-     {
+class PracticeTest extends TestCase {
+
+    public function testAssertTrue()
+    {
         $greeting = 'Hello, World.';
 
-        $this->assertTrue($greeting === 'Hello, World.');
-     }
+        $this->assertTrue($greeting === 'Hello, World.', $greeting);
+    }
+
+
+
 }
